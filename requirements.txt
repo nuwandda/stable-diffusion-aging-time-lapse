@@ -1,0 +1,15 @@
+fastapi[all]
+diffusers
+omegaconf
+transformers
+scipy
+ftfy
+accelerate
+mypy 
+ruff
+black
+ipykernel
+face_recognition
+opencv-python
+tensorflow==2.13.0
+boto3
