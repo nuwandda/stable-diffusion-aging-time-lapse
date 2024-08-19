@@ -93,12 +93,6 @@ To install the required packages, in a terminal, type:
   pip install -r requirements.txt
   ```
 
-### Download model
-To download the model, in a terminal, type:
-  ```sh
-  wget https://huggingface.co/spaces/nuwandaa/adcreative-demo-api/resolve/main/weights/realisticVisionV60B1_v20Novae.safetensors\?download\=true --directory-prefix weights --content-disposition
-  ```
-
 ### Run the project
 To run the project, in a terminal, type:
   ```sh
