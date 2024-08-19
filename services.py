@@ -15,15 +15,12 @@ from pkg_resources import parse_version
 """
 Note: make sure .env exist and contains your token
 """
-    
-MODEL_PATH = os.getenv('MODEL_PATH')
-if MODEL_PATH is None:
-    MODEL_PATH = 'weights/realisticVisionV60B1_v20Novae.safetensors'
-    
+MODEL_PATH = 'SG161222/Realistic_Vision_V6.0_B1_noVAE'
+ 
 
 def create_pipeline(model_path):
     # Create the pipe 
-    pipe = StableDiffusionImg2ImgPipeline.from_single_file(
+    pipe = StableDiffusionImg2ImgPipeline.from_pretrained(
         model_path, 
         revision="fp16", 
         torch_dtype=torch.float16
